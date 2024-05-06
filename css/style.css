@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    background-image: repeating-radial-gradient(circle, rgb(3, 3, 81) , rgb(8, 8, 48) 10%);
+
+}
+
+form{ 
+    width: 20vw;
+}
+
+div#container{ 
+    display: grid; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div#form{
+    display:grid;
+    background-color: rgb(255, 243, 229);
+    width: 30vw;
+    padding: 30px;
+    justify-items: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+div#form .btn{ 
+    margin: 5px;
+}
+
+div#form #label{ 
+    border-bottom: 2px solid rgb(1, 15, 146);
+    border-radius: 10px;;
+}
+
+div#output{ 
+    background-color: rgb(255, 243, 229);
+    display:none;
+    width: 30vw;
+    padding: 30px;
+    justify-items: center;
+    align-self: start;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+@media (max-width: 1000px){
+    div#output{ 
+        width: 50vw;
+    }
+
+    div#form{
+        width: 50vw;
+    }
+
+    form{ 
+        width: 30vw;
+    }
+}
